@@ -1,0 +1,29 @@
+<div class="container">
+    <h2>Event Binding</h2>
+    <h2 class="alert alert-primary">{{username}}</h2>
+    <input type="text" name="username" id="username" calss="form-control" (input)="onInput($event)">
+    <button [class]="isSubmitted? 'btn btn-success' : 'btn btn-secondary'" (click)="onSubmit()">Submit</button>
+    <br><br><br>
+    <button [class]="isSubmitted? 'btn btn-success' : 'btn btn-secondary'" (dblclick)="onSubmit()">Double Click</button>
+
+
+</div>
+
+<!-- (click)="myFunction()"      
+(dblclick)="myFunction()"   
+(submit)="myFunction()"
+(blur)="myFunction()"  
+(focus)="myFunction()" 
+(scroll)="myFunction()"
+(cut)="myFunction()"
+(copy)="myFunction()"
+(paste)="myFunction()"
+(keyup)="myFunction()"
+(keypress)="myFunction()"
+(keydown)="myFunction()"
+(mouseup)="myFunction()"
+(mousedown)="myFunction()"
+(mouseenter)="myFunction()"
+(drag)="myFunction()"
+(drop)="myFunction()"
+(dragover)="myFunction()" -->
